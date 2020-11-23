@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/fragment_gallery_scene">
 
-    <TextView
-        android:id="@+id/tvGallery"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gallery Fragment"
-        android:textSize="30sp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/laptop" />
+
+    <TextView
+        android:id="@+id/tvArticle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="true"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:text="Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin’s standard library depends on the Java Class Library, but type inference allows its syntax to be more concise. I have used this language for a while now and below I’ll show some tips for beginners.Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin’s standard library depends on the Java Class Library, but type inference allows its syntax to be more concise. I have used this language for a while now and below I’ll show some tips for beginners.Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin’s standard library depends on the Java Class Library, but type inference allows its syntax to be more concise. I have used this language for a while now and below I’ll show some tips for beginners.Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin’s standard library depends on the Java Class Library, but type inference allows its syntax to be more concise. I have used this language for a while now and below I’ll show some tips for beginners.Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin’s standard library depends on the Java Class Library, but type inference allows its syntax to be more concise. I have used this language for a while now and below I’ll show some tips for beginners.Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin’s standard library depends on the Java Class Library, but type inference allows its syntax to be more concise. I have used this language for a while now and below I’ll show some tips for beginners.Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin’s standard library depends on the Java Class Library, but type inference allows its syntax to be more concise. I have used this language for a while now and below I’ll show some tips for beginners.Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin’s standard library depends on the Java Class Library, but type inference allows its syntax to be more concise. I have used this language for a while now and below I’ll show some tips for beginners.Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin’s standard library depends on the Java Class Library, but type inference allows its syntax to be more concise. I have used this language for a while now and below I’ll show some tips for beginners."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.motion.widget.MotionLayout>
