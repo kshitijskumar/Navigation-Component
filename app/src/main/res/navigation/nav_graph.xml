@@ -14,5 +14,20 @@
     <fragment
         android:id="@+id/cameraFragment"
         android:name="com.example.navigationcomponent.CameraFragment"
-        android:label="CameraFragment" />
+        android:label="CameraFragment" >
+        <action
+            android:id="@+id/action_cameraFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_cameraFragment_to_clickFragment"
+            app:destination="@id/clickFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.navigationcomponent.GalleryFragment"
+        android:label="GalleryFragment" />
+    <fragment
+        android:id="@+id/clickFragment"
+        android:name="com.example.navigationcomponent.ClickFragment"
+        android:label="ClickFragment" />
 </navigation>
